@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Soto - Portafolio</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Valentin Soto</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="showSection('inicio'); return false;">Inicio</a></li>
+                        <li><a href="#" onclick="showSection('portafolio'); return false;">Portafolio</a></li>
+                        <li><a href="#" onclick="showSection('contacto'); return false;">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section active">
+            <div class="hero">
+                <div class="profile-img">VS</div>
+                <h1>Valentin Soto</h1>
+                <p>¡Bienvenido a mi portafolio! Soy estudiante apasionado por la tecnología y el desarrollo. Aquí podrás conocer mis proyectos y trabajos más destacados. Explora mi trabajo y no dudes en contactarme si tienes alguna pregunta o propuesta.</p>
+            </div>
+        </section>
+
+        <!-- Sección Portafolio -->
+        <section id="portafolio" class="section">
+            <h2 style="text-align: center; color: white; margin-bottom: 2rem; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Mi Portafolio</h2>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Los proyectos se cargarán aquí dinámicamente -->
+            </div>
+            <button class="add-project-btn" onclick="openAddModal()">+</button>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <div class="contact-form">
+                <h2>Contacto</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para agregar/editar proyecto -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Agregar Nuevo Proyecto</h3>
+            
+            <!-- Pestañas para elegir método de entrada -->
+            <div class="tabs">
+                <button type="button" class="tab-btn active" onclick="showTab('manual')">Manual</button>
+                <button type="button" class="tab-btn" onclick="showTab('google-docs')">Google Docs</button>
+            </div>
+            
+            <!-- Formulario manual -->
+            <div id="manual-tab" class="tab-content active">
+                <form id="projectForm">
+                    <div class="form-group">
+                        <label for="projectTitle">Título:</label>
+                        <input type="text" id="projectTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectDescription">Descripción:</label>
+                        <textarea id="projectDescription" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectCategory">Categoría:</label>
+                        <input type="text" id="projectCategory" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectUrl">URL del Proyecto:</label>
+                        <input type="url" id="projectUrl" placeholder="https://..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectPlatform">Plataforma:</label>
+                        <select id="projectPlatform" required>
+                            <option value="">Seleccionar plataforma</option>
+                            <option value="Google Docs">Google Docs</option>
+                            <option value="Google Sheets">Google Sheets</option>
+                            <option value="Canva">Canva</option>
+                            <option value="Miro">Miro</option>
+                            <option value="Figma">Figma</option>
+                            <option value="GitHub">GitHub</option>
+                            <option value="CodePen">CodePen</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar Proyecto</button>
+                </form>
+            </div>
+            
+            <!-- Formulario Google Docs -->
+            <div id="google-docs-tab" class="tab-content">
+                <form id="googleDocsForm">
+                    <div class="form-group">
+                        <label for="googleDocsUrl">URL de Google Docs:</label>
+                        <input type="url" id="googleDocsUrl" placeholder="https://docs.google.com/document/d/..." required>
+                        <small style="color: #666; font-size: 0.9rem;">
+                            Asegúrate de que el documento esté compartido como "Cualquier persona con el enlace puede ver"
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectCategoryDocs">Categoría:</label>
+                        <input type="text" id="projectCategoryDocs" placeholder="Ej: Desarrollo Web, Mobile, etc." required>
+                    </div>
+                    <button type="button" class="btn btn-info" onclick="loadFromGoogleDocs()">Cargar desde Google Docs</button>
+                </form>
+                
+                <!-- Preview del contenido cargado -->
+                <div id="docsPreview" style="display: none;">
+                    <h4>Vista previa del documento:</h4>
+                    <div class="form-group">
+                        <label for="previewTitle">Título:</label>
+                        <input type="text" id="previewTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="previewDescription">Descripción:</label>
+                        <textarea id="previewDescription" required rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="previewCategory">Categoría:</label>
+                        <input type="text" id="previewCategory" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="saveFromPreview()">Guardar Proyecto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para ver más detalles -->
+    <div id="viewModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeViewModal()">&times;</span>
+            <h3 id="viewTitle"></h3>
+            <p id="viewDescription"></p>
+            <p><strong>Categoría:</strong> <span id="viewCategory"></span></p>
+            <p><strong>Fecha:</strong> <span id="viewDate"></span></p>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
