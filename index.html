@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Registro</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <meta name="google-signin-client_id" content="620961486430-sqlt42g1qbdm3ebkrvs5k5num4kl7fue.apps.googleusercontent.com">
+</head>
+<body>
+<div class="background-blur" id="background-blur"></div>
+
+  <div class="container" id="container">
+
+    <!-- Inicio de Sesión -->
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Inicia sesión aquí</h1>
+        <input type="email" placeholder="Correo electrónico" />
+        <input type="password" placeholder="Contraseña" />
+        <div class="options">
+          <label><input type="checkbox" /> Recuérdame</label>
+          <a href="#">¿Olvidaste la contraseña?</a>
+        </div>
+        <button>Iniciar Sesión</button>
+        <span>O usa tu cuenta</span>
+        <div class="social-container">
+          <!-- Botón oficial de Google Sign-In -->
+          <div id="g_id_onload"
+               data-client_id="620961486430-sqlt42g1qbdm3ebkrvs5k5num4kl7fue.apps.googleusercontent.com"
+               data-context="signin"
+               data-ux_mode="popup"
+               data-callback="handleCredentialResponse"
+               data-auto_prompt="false">
+          </div>
+          <div class="g_id_signin"
+               data-type="standard"
+               data-shape="pill"
+               data-theme="outline"
+               data-text="signin_with"
+               data-size="large"
+               data-logo_alignment="left">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Registro -->
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Regístrate aquí</h1>
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Correo electrónico" />
+        <input type="password" placeholder="Contraseña" />
+        <button>Registrar</button>
+        <span>o usa tu cuenta</span>
+        <div class="social-container">
+          <!-- Botón de Google Sign-Up -->
+          <div id="g_id_onload2"
+               data-client_id="620961486430-sqlt42g1qbdm3ebkrvs5k5num4kl7fue.apps.googleusercontent.com"
+               data-context="signup"
+               data-ux_mode="popup"
+               data-callback="handleCredentialResponse"
+               data-auto_prompt="false">
+          </div>
+          <div class="g_id_signin"
+               data-type="standard"
+               data-shape="pill"
+               data-theme="outline"
+               data-text="signin_with"
+               data-size="large"
+               data-logo_alignment="left">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Panel de animación -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Bienvenido de nuevo!</h1>
+          <p>Si tienes una cuenta, inicia sesión aquí y diviértete</p>
+          <button class="ghost" id="signIn">Iniciar Sesión</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hola, Bienvenido!</h1>
+          <p>Si aún no tienes una cuenta, únete a nosotros y comienza tu viaje</p>
+          <button class="ghost" id="signUp">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script para manejar respuesta del login con Google -->
+  <script>
+    function handleCredentialResponse(response) {
+      const id_token = response.credential;
+
+      // Aquí puedes validar con el backend si quieres.
+      // Por ahora redirigimos directamente al portafolio:
+      console.log("ID token:", id_token);
+
+      // Redirigir al portafolio
+      window.location.href = "form.html"; // o "portafolio.html" si usas otro nombre
+    }
+  </script>
+</body>
+</html>
