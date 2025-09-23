@@ -36,7 +36,7 @@ let projects = [
         externalUrl: "https://drive.google.com/file/d/1G9lqtCNNj5gPrAgeY5wyQLlMHKpIBc2s/view?usp=sharing",
         platform: "Google Drive"
     },
-    {
+    /* {
         id: 5,
         title: "Manual Azure",
         description: "Manual de creación de cuenta Azure",
@@ -44,8 +44,8 @@ let projects = [
         date: "2024-05-12",
         externalUrl: "https://drive.google.com/file/d/1KbyTRBNWqwB1TCXNl9YyHcn5qbhqv7qu/view?usp=sharing",
         platform: "Google Drive"
-    },
-    {
+    }, */
+    /* {
         id: 6,
         title: "Manual Azure",
         description: "Manual de alojamiento de sitio web en Azure",
@@ -53,8 +53,8 @@ let projects = [
         date: "2024-06-01",
         externalUrl: "https://drive.google.com/file/d/1nOmMLkhxpovapJqMuSM5_mBkCGVsekky/view?usp=sharing",
         platform: "Google Drive"
-    },
-    {
+    }, */
+    /* {
         id: 7,
         title: "Examen",
         description: "Examen parcial del curso Base de Datos II",
@@ -62,8 +62,8 @@ let projects = [
         date: "2024-07-15",
         externalUrl: "https://drive.google.com/file/d/176RycTS8JLJe7M6lAEsWRCpaU3XflwKV/view?usp=sharing",
         platform: "Google Drive"
-    },
-    {
+    }, */
+    /* {
         id: 10,
         title: "Actividad 01",
         description: "Consultas multitablas SQL Server",
@@ -71,8 +71,8 @@ let projects = [
         date: "2024-10-05",
         externalUrl: "https://docs.google.com/document/d/160DrpBXw9HtZHKxVwdgQA78dndvcOR0IOYSvB_Rw95E/edit?usp=sharing",
         platform: "Google Docs"
-    },
-    {
+    }, */
+    /* {
         id: 11,
         title: "Actividad 02",
         description: "Consultas de tablas en SQL Server",
@@ -80,8 +80,8 @@ let projects = [
         date: "2024-11-12",
         externalUrl: "https://docs.google.com/document/d/1VOS39nPkEUfoJeNKZtq51qYS6213T4LnUKxo6ynXCPM/edit?usp=sharing",
         platform: "Google Docs"
-    },
-    {
+    }, */
+    /* {
         id: 12,
         title: "Módulo 2 & 3",
         description: "Instalación, configuración de SQL Server Y administración de BD",
@@ -89,8 +89,8 @@ let projects = [
         date: "2024-12-01",
         externalUrl: "https://docs.google.com/document/d/1pgCTyEk372ZlE0WD-0AFdNPJyJG_H-xYVNwDkoB0oWM/edit?usp=sharing",
         platform: "Google Docs"
-    },
-    {
+    }, */
+    /* {
         id: 13,
         title: "Módulo 4 & 5",
         description: "Seguridad y consultas avanzadas en SQL Server",
@@ -98,8 +98,8 @@ let projects = [
         date: "2024-12-15",
         externalUrl: "https://docs.google.com/document/d/1TcCVX_GN9ha9BjpijpA1NpJOMd0BzdWKy3DJzh93SaQ/edit?usp=sharing",
         platform: "Google Docs"
-    },
-    {
+    }, */
+    /* {
         id: 14,
         title: "Módulo 6 & 7",
         description: "Administración de rendimiento y alta disponibilidad",
@@ -108,7 +108,7 @@ let projects = [
         externalUrl: "https://docs.google.com/document/d/1IX_wXxGpb9elBCUtU7NhOGmoxh_fzXDaIgk4Womvl0w/edit?usp=sharing",
         platform: "Google Docs"
     },
-    {
+    /* {
         id: 15,
         title: "Módulo 8",
         description: "Administración de instancias en la nube",
@@ -116,7 +116,7 @@ let projects = [
         date: "2024-12-25",
         externalUrl: "https://docs.google.com/document/d/1F67GPtdfwf8xVi36gs8eF388w8_X-jPZaeS8kOG6wzQ/edit?usp=sharing",
         platform: "Google Docs"
-    }
+    } */
 ];
 
 let currentEditingId = null;
