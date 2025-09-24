@@ -5,7 +5,7 @@ let projects = [
         title: "Resumen SGBD",
         description: "Resumen crítico sobre el Libro SGBD",
         category: "Pdf",
-        date: "2025-09-17",
+        date: "2025-09-10",
         externalUrl: "https://drive.google.com/file/d/1JtslYLXKIp_PcidyVXUEaMPlVDWuMIrK/view?usp=sharing",
         platform: "Google Drive"
     },
@@ -13,10 +13,10 @@ let projects = [
         id: 2,
         title: "Diagrama",
         description: "Diagrama entidad-relación, En Miro",
-        category: "Diagrama",
-        date: "2024-02-20",
-        externalUrl: "https://miro.com/app/board/uXjVIEWtAuc=/?share_link_id=802140616388",
-        platform: "Miro"
+        category: "Pdf",
+        date: "2025-09-10",
+        externalUrl: "https://drive.google.com/file/d/1Z0-eRjaxKknJWg48rf9Su0geX9htrvW9/view?usp=sharing",
+        platform: "Google Drive"
     },
     {
         id: 3,
