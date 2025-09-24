@@ -25,7 +25,7 @@ let projects = [
         category: "Visualización de Diagrama",
         date: "2025-09-17",
         externalUrl: "https://docs.google.com/spreadsheets/d/1ZzwayswddsjOWyBMdKsO8Gh_VZDjuWFp/edit?usp=sharing&ouid=111745636292115654605&rtpof=true&sd=true",
-        platform: "Google Excel"
+        platform: "Google Drive"
     },
     {
         id: 4,
