@@ -15,8 +15,8 @@ let projects = [
         description: "Diagrama entidad-relación, En Miro",
         category: "Pdf",
         date: "2025-09-10",
-        externalUrl: "https://drive.google.com/file/d/1Z0-eRjaxKknJWg48rf9Su0geX9htrvW9/view?usp=sharing",
-        platform: "Google Drive"
+        externalUrl: "https://miro.com/app/board/uXjVJFbpv9Y=/?share_link_id=423081976538",
+        platform: "Miro"
     },
     {
         id: 3,
