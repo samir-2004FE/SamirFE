@@ -5,8 +5,8 @@ let projects = [
         title: "Resumen SGBD",
         description: "Resumen crítico sobre el Libro SGBD",
         category: "Pdf",
-        date: "2025-04-05",
-        externalUrl: "https://drive.google.com/file/d/1JtslYLXKIp_PcidyVXUEaMPlVDWuMIrK/view?usp=drive_link",
+        date: "2025-09-17",
+        externalUrl: "https://drive.google.com/file/d/1JtslYLXKIp_PcidyVXUEaMPlVDWuMIrK/view?usp=sharing",
         platform: "Google Drive"
     },
     {
