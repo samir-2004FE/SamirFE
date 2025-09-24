@@ -4,10 +4,10 @@ let projects = [
         id: 1,
         title: "Resumen SGBD",
         description: "Resumen crítico sobre el Libro SGBD",
-        category: "Pdf",
+        category: "Diagrama miro",
         date: "2025-09-10",
-        externalUrl: "https://drive.google.com/file/d/1JtslYLXKIp_PcidyVXUEaMPlVDWuMIrK/view?usp=sharing",
-        platform: "Google Drive"
+        externalUrl: "https://miro.com/welcomeonboard/Y2VIdUI0M2RTR0N2a1JaZG1oeWZtdkcrV0FtNFkxcWVoZ0RSbTgxcVBqcjlncDVkNmszT1ZiK0VlcFBvUUVCbDA4NENGalIrZE0zejF2UEhrUFRpV0N1Vlc0OFdhcGg4RTR6SHhjeGVZclJjUVRpMlVlSUp1aXlzUUFEMDdtL1pBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=905437793795",
+        platform: "Miro"
     },
     {
         id: 2,
