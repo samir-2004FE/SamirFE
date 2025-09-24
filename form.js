@@ -23,8 +23,8 @@ let projects = [
         title: "Diagrama",
         description: "Diagrama excel",
         category: "Visualización de Diagrama",
-        date: "2024-03-10",
-        externalUrl: "https://docs.google.com/spreadsheets/d/1uZKL3w1ifQFyDPiqVZ99NzQVam0-GJDwbgwzowmgKR0/edit?usp=sharing",
+        date: "2025-09-17",
+        externalUrl: "https://docs.google.com/spreadsheets/d/1ZzwayswddsjOWyBMdKsO8Gh_VZDjuWFp/edit?usp=sharing&ouid=111745636292115654605&rtpof=true&sd=true",
         platform: "Google Excel"
     },
     {
