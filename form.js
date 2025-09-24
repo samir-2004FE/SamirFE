@@ -13,7 +13,7 @@ let projects = [
         id: 2,
         title: "Diagrama",
         description: "Diagrama entidad-relación, En Miro",
-        category: "Pdf",
+        category: "Miro",
         date: "2025-09-10",
         externalUrl: "https://miro.com/app/board/uXjVJFbpv9Y=/?share_link_id=423081976538",
         platform: "Miro"
