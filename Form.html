@@ -8,29 +8,37 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">Samir Flores</div>
-        <nav>
-          <ul>
-            <li><a href="#" onclick="showSection('inicio'); return false;">Inicio</a></li>
-            <li><a href="#" onclick="showSection('portafolio'); return false;">Portafolio</a></li>
-            <li><a href="#" onclick="showSection('contacto'); return false;">Contacto</a></li>
-          </ul>
-        </nav>
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo + Nombre -->
+      <div class="logo">
+        <img src="logoupla.png" alt="Logo" style="height:40px; vertical-align:middle; margin-right:8px;">
+        <span>Samir Flores</span>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('inicio'); return false;">Inicio</a></li>
+          <li><a href="#" onclick="showSection('portafolio'); return false;">Portafolio</a></li>
+          <li><a href="#" onclick="showSection('contacto'); return false;">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
-    <!-- Sección Inicio -->
-    <section id="inicio" class="section active">
-      <div class="hero">
-        <div class="profile-img">SF</div>
-        <h1>Samir Flores</h1>
-        <p>¡Bienvenido a mi portafolio! Soy estudiante apasionado por la tecnología y el desarrollo. Aquí podrás conocer mis proyectos y trabajos más destacados. Explora mi trabajo y no dudes en contactarme si tienes alguna pregunta o propuesta.</p>
+<main class="container">
+  <!-- Sección Inicio -->
+  <section id="inicio" class="section active">
+    <div class="hero">
+      <!-- Aquí cambiamos el texto "SF" por una imagen -->
+      <div class="profile-img">
+        <img src="samir.png" alt="Foto de perfil" style="width:120px; height:120px; border-radius:50%;">
       </div>
-    </section>
+      <h1>Samir Flores</h1>
+      <p>¡Bienvenido a mi portafolio! Soy estudiante apasionado por la tecnología y el desarrollo. Aquí podrás conocer mis proyectos y trabajos más destacados. Explora mi trabajo y no dudes en contactarme si tienes alguna pregunta o propuesta.</p>
+    </div>
+  </section>
+</main>
 
     <!-- Sección Portafolio -->
     <section id="portafolio" class="section">
