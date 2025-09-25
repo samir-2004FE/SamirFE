@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Bienvenido</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Ingresar</button>
+    </form>
+    <p id="error-msg" style="color:red; margin-top:10px; display:none;">
+      Usuario o contraseña incorrectos ❌
+    </p>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const errorMsg = document.getElementById("error-msg");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // evita que se envíe el formulario normal
+
+      const usuario = document.getElementById("usuario").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (usuario === "Samir" && password === "Samir1234") {
+        window.location.href = "Form.html"; // redirige a la página
+      } else {
+        errorMsg.style.display = "block"; // muestra el error
+      }
+    });
+  </script>
+</body>
+</html>
