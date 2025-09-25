@@ -523,3 +523,45 @@ main {
         width: 95%;
     }
 }
+
+/* --- NUEVOS ESTILOS AGREGADOS --- */
+
+/* Logo con imagen */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre logo y texto */
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #667eea;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Imagen de perfil en Inicio */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  overflow: hidden; /* Hace la imagen circular */
+  border: 5px solid #667eea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* La imagen se ajusta bien */
+}
+
+.profile-img:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
